@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+api/__init__.py
+api/serializers.py
+api/urls.py
+api/views.py
+migrations/0001_initial.py
+migrations/0002_netoshardwareinventory_product_raw_json.py
+migrations/__init__.py
+netos.egg-info/PKG-INFO
+netos.egg-info/SOURCES.txt
+netos.egg-info/dependency_links.txt
+netos.egg-info/not-zip-safe
+netos.egg-info/top_level.txt

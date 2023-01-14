@@ -1,0 +1,19 @@
+{% extends 'generic/object.html' %}
+{% load buttons %}
+{% load static %}
+{% load helpers %}
+{% load plugins %}
+
+
+{% block extra_tabs %}
+    {% with tab_name='netos-software-bug' count=object.software_bug_count %}
+      <li role="presentation" class="nav-item">
+          <a class="nav-link {% if active_tab == tab_name %} active{% endif %}" href="{% url 'plugins:netos:netossoftwareinventory_bugs' pk=object.pk %}">Software Bug {% badge count %}</a>
+      </li>
+    {% endwith %}
+    {% with tab_name='netos-software-cve' count=object.software_cve_count %}
+      <li role="presentation" class="nav-item">
+          <a class="nav-link {% if active_tab == tab_name %} active{% endif %}" href="{% url 'plugins:netos:netossoftwareinventory_cves' pk=object.pk %}">Software CVE  {% badge count %}</a>
+      </li>
+    {% endwith %}
+{% endblock %}

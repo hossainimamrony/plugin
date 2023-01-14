@@ -1,0 +1,3 @@
+recursive-include netos/templates *.html
+recursive-include netos/static *.js
+recursive-include netos/static *.jpeg
